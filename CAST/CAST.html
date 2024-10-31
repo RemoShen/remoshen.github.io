@@ -77,10 +77,12 @@
       <span class="conference"
         >IEEE Transactions on Visualization and Computer Graphics</span
       >
-      <h1>Authoring Data-Driven Chart Animations</h1>
+      <h1>
+        Authoring Data-Driven Chart Animations through Direct Manipulation
+      </h1>
       <span>
-        <strong>Yuancheng Shen, </strong>Yue Zhao, Tong Ge, Haoyan Shi, Bongshin
-        Lee, Yunhai Wang</span
+        <strong>Yuancheng Shen, </strong>Yue Zhao, Yunhai Wang, Tong Ge, Haoyan
+        Shi and Bongshin Lee</span
       >
       <div class="links">
         <a target="_blank" href="./CAST.pdf" data-v-24fdba26="">
@@ -281,24 +283,19 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            max-width: 800px;
+            max-width: 1000px;
           "
         >
           <img src="./markunit.png" alt="arch" style="width: 40%" />
         </span>
       </p>
       <p class="context">
-        <strong>Figure 6</strong>: CAST suggests additional marks to be selected
-        based on the user-selected multiple types of marks from the input chart.
-        In the original version, once (a) two dot cells in blue from different
-        rows are selected, the system suggests (b) all dot cells in the blue
-        color based on the same and different attribute values. In the newer
-        version, selecting (c) a label in the y-axis and one dot cell from the
-        bottom row results in the system highlighting (d) all dots and the
-        associated label in that row by using the type names of the selected
-        marks. When (e) a label in the y-axis and a dot cell from two distinct
-        rows are chosen, the system suggests (f) all dot cells and y-axis
-        labels.
+        <strong>Figure 6</strong>: Unlike CAST, CAST+ can suggest additional
+        marks when multiple types of marks are selected by the user. When two
+        rectangles in yellow from different countries are selected (a), all
+        yellow rectangles are highlighted as a suggestion result (b). When a
+        label in the y-axis and its corresponding rectangle of the first country
+        are selected (c), the system suggests all other yellow rectangles (d).
       </p>
 
       <h2>Next Keyframe Recommendation</h2>
@@ -317,13 +314,17 @@
         </span>
       </p>
       <p class="context">
-        <strong>Figure 7</strong>: Illustrating the keyframe sequence
-        auto-completion process with CAST+. (a) The entire sequence of user
-        selection and the system's recommendation involved in authoring the
-        animation in Scenario 4, where the selected keyframe is indicated by a
-        mouse icon; (b, c) the procedure for computing the suggested next
-        keyframes, where the mark units in all recommended keyframes consist of
-        the same type of visual marks in (b) or different types in (c).
+        <strong>Figure 7</strong>: The keyframe sequence auto-completion process
+        with CAST+ includes the following steps: (a) Computing suggested next
+        keyframes involves analyzing the data attributes associated with the
+        selected label (left). This is followed by identifying three different
+        keyframes (middle) by varying the value of one attribute or mark type,
+        and finally, removing duplicates to form the suggested next keyframes
+        (right). (b) Constructing the animation sequence begins with selecting a
+        label (left). Next, a keyframe featuring all yellow bars is chosen from
+        the list of suggested next keyframes (middle). Finally, the entire
+        keyframe sequence is generated (right) by repeatedly changing the value
+        of the "category" attribute.
       </p>
       <h2>Nested Selection with Canis</h2>
       <p>
@@ -431,7 +432,7 @@
     <footer>
       <div className="footer-content">
         <span>copyright &copy;</span>
-        Yuancheng Shen 2023
+        Yuancheng Shen 2024
       </div>
     </footer>
   </body>
