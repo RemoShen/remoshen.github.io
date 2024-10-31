@@ -14,13 +14,13 @@ export default function Research() {
       title: "Authoring Data-Driven Chart Animations",
       authors: [
         "Yuancheng Shen",
+        "Yunhai Wang",
         "Yue Zhao",
         "Tong Ge",
         "Haoyan Shi",
-        "Bongshin Lee",
-        "Yunhai Wang",
+        "Bongshin Lee"
       ],
-      conference: "IEEE Transactions on Visualization and Computer Graphics",
+      conference: "IEEE Transactions on Visualization and Computer Graphics 2024",
       link: "./CAST/CAST.html",
     },
     {
@@ -36,46 +36,7 @@ export default function Research() {
       ],
       conference: "Computer Science 2023",
       link: "./Anomaly/Anomaly.html",
-    },
-    // {
-    //   imageUrl: chart,
-    //   title: "Exploring SVG Markup Standards for Enhanced Data Visualization",
-    //   authors: [
-    //     // "Yuancheng Shen",
-    //     // "Rui Ban",
-    //     // "Xin Chen",
-    //     // "Runduo Hua",
-    //     // "Yunhai Wang",
-    //   ],
-    //   conference: "Working paper",
-    //   link: "",
-    // },
-    {
-      imageUrl: selector,
-      title: "PenTouchSelector: Selecting Elements in SVG Charts",
-      authors: [
-        // "Yuancheng Shen",
-        // "Rui Ban",
-        // "Xin Chen",
-        // "Runduo Hua",
-        // "Yunhai Wang",
-      ],
-      conference: "Working paper",
-      link: "",
-    },
-    // {
-    //   imageUrl: gen,
-    //   title: "A Visual Grammar for Charting and Reverse Generation",
-    //   authors: [
-    //     // "Yuancheng Shen",
-    //     // "Rui Ban",
-    //     // "Xin Chen",
-    //     // "Runduo Hua",
-    //     // "Yunhai Wang",
-    //   ],
-    //   conference: "Working paper",
-    //   link: "",
-    // },
+    }
   ];
   const projects = [
     // {
