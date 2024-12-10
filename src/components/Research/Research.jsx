@@ -4,6 +4,7 @@ import Project from "./Project/Project";
 import Publication from "./Publication/Publication";
 import cast from "./cast.png";
 import anomaly from "./anomaly.png";
+import swin from "./swin.png"
 import selector from "./selector.png";
 import chart from "./chart.png";
 import gen from "./gen.png";  
@@ -11,7 +12,7 @@ export default function Research() {
   const research = [
     {
       imageUrl: cast,
-      title: "Authoring Data-Driven Chart Animations",
+      title: "Authoring Data-Driven Chart Animations through Direct Manipulation",
       authors: [
         "Yuancheng Shen",
         "Yunhai Wang",
@@ -22,6 +23,18 @@ export default function Research() {
       ],
       conference: "IEEE Transactions on Visualization and Computer Graphics 2024",
       link: "./CAST/CAST.html",
+    },
+    {
+      imageUrl: swin,
+      title: "Swinvision: Detecting Small Objects in Low-Light Environments",
+      authors: [
+        "Tao Dai",
+        "Qi Wang",
+        "Yuancheng Shen",
+        "Shang Gao"
+      ],
+      conference: "Computer Vision and Image Understanding 2024",
+      link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4768710",
     },
     {
       imageUrl: anomaly,
