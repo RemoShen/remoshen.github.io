@@ -1,11 +1,14 @@
 .researchContainer {
   width: 70%;
   margin: 0 auto;
+  color: #fff;
+  background: #000;
 }
 .researchHeader {
   margin: 0 10%;
   padding: 10px;
   text-align: left;
+  color: #fff;
 }
 .researchContent {
   width: 100%;
@@ -14,17 +17,25 @@
   flex-direction: column;
   max-height: 400px;
   overflow: auto;
+  color: #fff;
 }
 .researchContainer h1 {
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+  color: #fff;
 }
 .leftSperator {
-  width: 150px;
-  height: 2px;
-  margin: 15px 0px;
-  background: #055bb6;
+  display: none;
+}
+.researchContent a {
+  color: #6ec1f6;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.researchContent a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media screen and (min-height: 800px) {

@@ -5,7 +5,7 @@ export default function Header() {
     <header>
       <div className="menuContainer">
         <div className="name">
-          <h1>Yuancheng (Remo) Shen</h1>
+          <h1>Remo Shen</h1>
         </div>
         <ul className="menu">
           <li>

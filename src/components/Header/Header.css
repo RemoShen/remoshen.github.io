@@ -1,24 +1,33 @@
 header {
-  width: 70%;
-  margin: 1% auto;
+  width: 100%;
+  height: 70px;
+  margin: 0;
   box-sizing: border-box;
-  /* bottom line */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-  z-index: 999;
-  background-color: #fff;
+  border-bottom: 2px solid #222;
+  z-index: 1000;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menuContainer {
-  display: inline-flex;
+  display: flex;
   width: 100%;
+  max-width: 1200px;
   justify-content: space-between;
-  margin-left: auto;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2vw;
 }
 .menu {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 32px;
 }
 .menu li {
   white-space: nowrap;
@@ -26,36 +35,34 @@ header {
 }
 .menu li a {
   text-decoration: none;
-  color: #000;
-  padding: 10% 10px;
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 600;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  transition: all 200ms linear;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  transition: color 0.2s, background 0.2s;
 }
 .menu li a:hover {
-  border-radius: 10px;
-  /* background-color: rgb(134, 196, 254); */
-  color: #000000;
+  color: #6ec1f6;
+  background: none;
 }
 .menu li:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
   transition: all 200ms linear;
 }
-
 .title {
-  font-family: fantasy;
-  font-size: 28px;
+  font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.5px;
 }
 .title:hover {
   cursor:default;
 }
 .active {
-  border-radius: 10px;
-  /* background-color: rgb(134, 196, 254); */
-  color: #ababab !important;
+  color: #6ec1f6 !important;
 }
 .name {
   display: flex;
@@ -63,9 +70,24 @@ header {
 }
 .name h1{
   padding: 0 20px;
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: -1px;  
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  /* font-style: italic; */
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: 'Satisfy', cursive, 'Montserrat', 'Arial', sans-serif;
+}
+@media (max-width: 700px) {
+  .menuContainer {
+    padding: 0 8px;
+  }
+  .menu {
+    gap: 16px;
+  }
+  .title {
+    font-size: 1.1rem;
+  }
+  .name h1 {
+    font-size: 1rem;
+    padding: 0 8px;
+  }
 }
