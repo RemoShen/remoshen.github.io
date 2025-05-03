@@ -33,8 +33,8 @@ export default function Research() {
         "Yuancheng Shen",
         "Shang Gao"
       ],
-      conference: "Computer Vision and Image Understanding 2024",
-      link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4768710",
+      conference: "IEEE Access 2025",
+      link: "https://ieeexplore.ieee.org/document/10910170",
     },
     {
       imageUrl: anomaly,
