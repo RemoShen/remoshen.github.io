@@ -1,5 +1,5 @@
 .researchContainer {
-  width: 70%;
+  width: 85%;
   margin: 0 auto;
   color: #fff;
   background: #000;
@@ -12,10 +12,10 @@
 }
 .researchContent {
   width: 100%;
-  margin: 0 auto;
+  margin: 60px 0px auto auto;
   display: flex;
   flex-direction: column;
-  max-height: 400px;
+  /* max-height: 400px; */
   overflow: auto;
   color: #fff;
 }

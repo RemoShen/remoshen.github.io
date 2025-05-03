@@ -20,7 +20,7 @@ export default function Project({ info }) {
             <React.Fragment key={index}>
               {index > 0 && ", "}
               {author === "Yuancheng Shen" ? (
-                <strong>{author}</strong>
+                <span className="highlight-author">{author}</span>
               ) : (
                 <span>{author}</span>
               )}

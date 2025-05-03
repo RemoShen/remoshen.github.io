@@ -43,4 +43,7 @@
   .proPDF {
     margin-top: 10px;
   }
-  
+.highlight-author {
+  color: #079bbc; /* 你喜欢的蓝色，也可以换成别的色号 */
+  font-weight: bold;
+}
