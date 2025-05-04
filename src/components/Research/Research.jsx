@@ -19,7 +19,7 @@ export default function Research() {
       link: "./CAST/CAST.html",
     },
     {
-      imageUrl: '/Swinvision/teaser.png',
+      imageUrl: '/SwinVision/teaser.png',
       title: "Swinvision: Detecting Small Objects in Low-Light Environments",
       authors: [
         "Tao Dai",
