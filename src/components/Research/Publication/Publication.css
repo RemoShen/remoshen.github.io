@@ -6,12 +6,13 @@
   border: 0.5px solid #ccc;
   padding: 0 10px;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: all 0.1s;
+  will-change: transform;
 }
-.publication-item:hover {
+/* .publication-item:hover {
   transform: scale(1.01);
-  transition: all 0.25s;
-}
+  transition: all 0.1s;
+} */
 .pubImg {
   height: 120px;
   width: 200px;

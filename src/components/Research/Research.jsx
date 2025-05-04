@@ -5,9 +5,6 @@ import Publication from "./Publication/Publication";
 import cast from "./cast.png";
 import anomaly from "./anomaly.png";
 import swin from "./swin.png"
-import selector from "./selector.png";
-import chart from "./chart.png";
-import gen from "./gen.png";  
 export default function Research() {
   const research = [
     {
