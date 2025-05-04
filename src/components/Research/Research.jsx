@@ -2,13 +2,10 @@ import React from "react";
 import "./Research.css";
 import Project from "./Project/Project";
 import Publication from "./Publication/Publication";
-import cast from "./cast.png";
-import anomaly from "./anomaly.png";
-import swin from "./swin.png"
 export default function Research() {
   const research = [
     {
-      imageUrl: cast,
+      imageUrl: '/CAST/teaser.png',
       title: "Authoring Data-Driven Chart Animations through Direct Manipulation",
       authors: [
         "Yuancheng Shen",
@@ -22,7 +19,7 @@ export default function Research() {
       link: "./CAST/CAST.html",
     },
     {
-      imageUrl: swin,
+      imageUrl: '/Swinvision/teaser.png',
       title: "Swinvision: Detecting Small Objects in Low-Light Environments",
       authors: [
         "Tao Dai",
@@ -34,7 +31,7 @@ export default function Research() {
       link: "https://ieeexplore.ieee.org/document/10910170",
     },
     {
-      imageUrl: anomaly,
+      imageUrl: '/Anomaly/teaser.png',
       title:
         "Anomaly Detection Algorithm for Network Device Configuration based on Configuration Statement Tree",
       authors: [
