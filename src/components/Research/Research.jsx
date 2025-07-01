@@ -30,20 +30,6 @@ export default function Research() {
       conference: "IEEE Access 2025",
       link: "https://ieeexplore.ieee.org/document/10910170",
     },
-    {
-      imageUrl: '/Anomaly/teaser.png',
-      title:
-        "Anomaly Detection Algorithm for Network Device Configuration based on Configuration Statement Tree",
-      authors: [
-        "Yuancheng Shen",
-        "Rui Ban",
-        "Xin Chen",
-        "Runduo Hua",
-        "Yunhai Wang",
-      ],
-      conference: "Computer Science 2023",
-      link: "./Anomaly/Anomaly.html",
-    }
   ];
   const projects = [
     // {
