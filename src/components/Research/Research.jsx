@@ -5,6 +5,22 @@ import Publication from "./Publication/Publication";
 export default function Research() {
   const research = [
     {
+      imageUrl: '/BioSet/teaser.png',
+      title: "BioSET - Biomarker-based Spatial co-Expression analysis in Tumor environments",
+      authors: [
+        "Chahat Kalsi",
+        "Yuancheng Shen",
+        "Sophia Gaupp",
+        "Luca Reichmann",
+        "Meri Rogava",
+        "Michael Krone",
+        "Saeed Boorboor",
+        "Robert Krueger"
+      ],
+      conference: "IEEE VIS 2025",
+      link: "",
+    },
+    {
       imageUrl: '/CAST/teaser.png',
       title: "Authoring Data-Driven Chart Animations through Direct Manipulation",
       authors: [
