@@ -17,7 +17,7 @@ export default function Research() {
         "Saeed Boorboor",
         "Robert Krueger"
       ],
-      conference: "IEEE VIS 2025",
+      conference: "Bio+MedVis Challenge @ IEEE VIS 2025",
       link: "",
     },
     {
