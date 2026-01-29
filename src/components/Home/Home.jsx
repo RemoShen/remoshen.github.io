@@ -88,7 +88,7 @@ export default function Home() {
         <div className="homeContentRight">
           <div className="big-name-title">Yuancheng (Remo) Shen</div>
           <p>
-            Hello, I'm Remo. I'm currently a Ph.D. student major in Computer Science at Tandon
+            Hello, I'm Remo. I'm currently a Ph.D. Candidate major in Computer Science at Tandon
             School of Engineering, New York University. I'm working at the{" "}
             <a href="https://vida.engineering.nyu.edu/" target="_blank" rel="noreferrer">
               Visualization and Data Analytics Research Center (VIDA)

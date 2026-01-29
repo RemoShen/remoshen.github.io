@@ -17,8 +17,8 @@ export default function Research() {
         "Saeed Boorboor",
         "Robert Krueger"
       ],
-      conference: "Bio+MedVis Challenge @ IEEE VIS 2025",
-      link: "",
+      conference: "Bio+MedVis Challenge @ IEEE VIS 2025 (Award of Excellence)",
+      link: "http://biovis.net/2025/data/BioMedVisChallenge2025submissions/9592/final.pdf",
     },
     {
       imageUrl: '/CAST/teaser.png',
