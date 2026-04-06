@@ -1,0 +1,16 @@
+{
+  "title": "Authoring Data-Driven Chart Animations through Direct Manipulation",
+  "authors": [
+    "Yuancheng Shen",
+    "Yunhai Wang",
+    "Yue Zhao",
+    "Tong Ge",
+    "Haoyan Shi",
+    "Bongshin Lee"
+  ],
+  "venue": "IEEE Transactions on Visualization and Computer Graphics 2024",
+  "paper": "https://ieeexplore.ieee.org/document/10742546",
+  "code": "https://github.com/RemoShen/CanisStudio-Plus",
+  "website": "https://canisstudio.github.io/CASTPlus/",
+  "teaser": "teaser.png"
+}

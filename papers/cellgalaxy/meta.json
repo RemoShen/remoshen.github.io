@@ -1,0 +1,23 @@
+{
+  "title": "CellGalaxy: Multiscale Exploration of Biomedical Image Embeddings",
+  "authors": [
+    "Yuancheng Shen",
+    "Chahat Kalsi",
+    "Pranav Motarwar",
+    "Dania Annuar",
+    "Jacob Stimes",
+    "Sam Sterling",
+    "Shi Qiu",
+    "Irineu Illa-Bochaca",
+    "Iman Osman",
+    "David Fenyo",
+    "Gregory J. Baker",
+    "Eva Hernando",
+    "Kelly Ruggles",
+    "Aristotelis Tsirigos",
+    "Robert Krueger"
+  ],
+  "venue": "In processing 2026",
+  "code": "https://github.com/RemoShen/CellGalaxy",
+  "teaser": "teaser.png"
+}

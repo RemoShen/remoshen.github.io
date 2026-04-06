@@ -1,0 +1,24 @@
+{
+  "publications": [
+    {
+      "slug": "cellgalaxy",
+      "title": "CellGalaxy: Multiscale Exploration of Biomedical Image Embeddings"
+    },
+    {
+      "slug": "bioset",
+      "title": "BioSET: Interactive Visual Analysis of Biomarker Co-localization in Large Multi-Volume Tissue Data"
+    },
+    {
+      "slug": "cast",
+      "title": "Authoring Data-Driven Chart Animations through Direct Manipulation"
+    },
+    {
+      "slug": "swinvision",
+      "title": "Swinvision: Detecting Small Objects in Low-Light Environments"
+    },
+    {
+      "slug": "bioset_challenge",
+      "title": "BioSET - Biomarker-based Spatial co-Expression analysis in Tumor environments"
+    }
+  ]
+}
