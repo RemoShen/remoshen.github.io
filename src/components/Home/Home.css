@@ -1,16 +1,30 @@
-body {
-  background: #000 !important;
-}
-
+/* No forced min-height: short home copy won’t leave a huge empty band inside this block */
 .homeContainer {
   box-sizing: border-box;
-  min-height: 100vh;
+  position: relative;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background: #000;
-  padding: 80px 0 0 0;
+  padding: 1.25rem 0 4.5rem 0;
+}
+
+.homeContainer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: min(72vh, 720px);
+  background: radial-gradient(
+    ellipse 95% 85% at 50% 0%,
+    rgba(110, 193, 246, 0.07) 0%,
+    transparent 68%
+  );
+  pointer-events: none;
+  z-index: 0;
 }
 
 .homeHeader {
@@ -28,21 +42,24 @@ body {
   font-weight: 900;
   color: #fff;
   letter-spacing: 1px;
-  font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
   text-align: left;
   margin: 0;
 }
 
 .homeContent {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 3.5rem;
-  padding: 0 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.25rem;
+  padding: 0 clamp(16px, 4vw, 48px) 1.5rem;
+  box-sizing: border-box;
 }
 
 .homeContentLeft {
@@ -50,29 +67,33 @@ body {
   flex-direction: column;
   align-items: center;
   min-width: 200px;
-  margin-top: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0;
 }
 
-.homeContentLeft img {
-  width: 300px;
-  height: 300px;
+/* Only the avatar — Leaflet map tiles are also <img> deeper in this column */
+.homeContentLeft > img {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #fff;
-  margin-bottom: 2.2rem;
+  border: 2px solid rgba(255, 255, 255, 0.88);
+  margin-bottom: 1.35rem;
 }
 
 .hrf {
   display: flex;
   flex-direction: row;
-  gap: 2.2rem;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+  width: 100%;
 }
 
 .hrf a {
-  color: #fff;
+  color: #f0f0f0;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -87,9 +108,9 @@ body {
 }
 
 .hrf a svg {
-  width: 32px;
-  height: 32px;
-  fill: #fff;
+  width: 26px;
+  height: 26px;
+  fill: #f0f0f0;
   transition: fill 0.2s;
 }
 
@@ -98,12 +119,19 @@ body {
 }
 
 .homeContentRight {
-  color: #fff;
-  font-size: 1.13rem;
-  line-height: 2.05;
-  max-width: 800px;
+  color: #f0f0f0;
+  font-size: 1.15rem;
+  line-height: 1.78;
+  flex: 1 1 22rem;
+  min-width: min(100%, 18rem);
+  max-width: 48rem;
   text-align: justify;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  text-align-last: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  padding-left: 0;
+  padding-top: 0.15rem;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
 }
 
 .homeContentRight p {
@@ -118,51 +146,118 @@ body {
 }
 
 .homeContentRight a:hover {
-  color: #fff;
+  color: #fafafa;
   text-decoration: underline;
 }
 
 .homeContentRight strong, .homeContentRight b {
   font-weight: 900;
-  color: #fff;
+  color: #fafafa;
 }
 
 .big-name-title {
-  font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
-  font-size: 2.4rem;
-  font-weight: 900;
-  color: #fff;
-  letter-spacing: 2px;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: 0.04em;
   margin-bottom: 1.5rem;
-  line-height: 1.1;
+  line-height: 1.2;
+  text-align: left;
+  text-align-last: auto;
 }
 
 .contact-info {
-  margin-top: 2.5rem;
-  color: #fff;
-  font-size: 1rem;
-  opacity: 0.85;
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 15.5rem;
+  color: #d1d5db;
+  font-size: 0.95rem;
   text-align: center;
-  word-break: break-all;
+  word-break: break-word;
   line-height: 1.7;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.02em;
+}
+
+.contact-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.contact-row:last-child {
+  margin-bottom: 0;
+}
+
+.contact-row__icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  vertical-align: middle;
+}
+
+.contact-row__icon > path {
+  fill: #d1d5db;
+}
+
+.contact-row__icon > circle {
+  fill: #6ec1f6;
 }
 
 .email-link {
-  color: #fff;
+  color: #e5e7eb;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .email-link:hover {
   color: #6ec1f6;
-  opacity: 1;
+}
+
+.home-location-map {
+  margin-top: 1.35rem;
+  width: 100%;
+  max-width: 14rem;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #060608;
+  box-sizing: border-box;
+}
+
+.home-location-map__embed {
+  display: block;
+  width: 100%;
+  height: 168px;
+  border: 0;
+  border-radius: 9px 9px 0 0;
+  background: #ddd;
+}
+
+.home-location-map__osm {
+  display: block;
+  padding: 0.3rem 0.45rem 0.4rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  color: #525860;
+  text-decoration: none;
+  text-align: center;
+  background: #0a0a0d;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  transition: color 0.2s;
+}
+
+.home-location-map__osm:hover {
+  color: #6ec1f6;
 }
 
 @media (max-width: 900px) {
   .homeContainer {
     align-items: center;
-    padding: 0 0 80px 0;
+    margin-top: 70px;
+    padding: 1.25rem 0 4.5rem 0;
   }
   .homeHeader {
     max-width: 100vw;
@@ -176,12 +271,43 @@ body {
   .homeContent {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.75rem;
     max-width: 100vw;
+    padding: 1rem 16px;
   }
-  .homeContentLeft img {
-    width: 120px;
-    height: 120px;
+  .homeContentLeft {
+    align-items: center;
+  }
+  .homeContentLeft > img {
+    width: 108px;
+    height: 108px;
+    margin-bottom: 1.25rem;
+  }
+  .hrf {
+    align-self: center;
+  }
+  .contact-info {
+    text-align: center;
+    max-width: 100%;
+  }
+  .home-location-map {
+    max-width: 100%;
+  }
+  .home-location-map__embed {
+    height: 150px;
+  }
+  .contact-row {
+    justify-content: center;
+  }
+  .homeContentRight {
+    padding-left: 0;
+    text-align: left;
+    text-align-last: auto;
+    hyphens: none;
+    -webkit-hyphens: none;
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }
 

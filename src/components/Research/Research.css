@@ -22,7 +22,7 @@
 }
 .researchContainer h1 {
   margin: 0;
-  font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
   color: #fff;
 }
 .leftSperator {
@@ -44,7 +44,7 @@
   margin: 0 0 1rem;
   padding: 0 10%;
   text-align: left;
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
 }
 
 .research-load-error {

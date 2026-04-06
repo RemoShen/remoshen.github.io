@@ -1,6 +1,9 @@
 import React from "react";
 import "./Home.css";
 import photo from "./photo.JPG";
+
+const remoNyuEmail = "remo.shen@nyu.edu";
+
 export default function Home() {
   return (
     <div className="homeContainer">
@@ -10,7 +13,7 @@ export default function Home() {
           <div className="leftSperator"></div>
           <section className="hrf">
             <a
-              href="https://github.com/jshmsyc"
+              href="https://github.com/remoshen"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -65,35 +68,78 @@ export default function Home() {
           </section>
           <div className="contact-info">
             <div className="contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{marginRight: '6px', verticalAlign: 'middle'}}>
+              <svg
+                className="contact-row__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
                 <path d="M12 2C7.03 2 3 6.03 3 11c0 5.25 7.11 11.31 7.41 11.56.36.3.82.44 1.29.44.47 0 .93-.15 1.29-.44C13.89 22.31 21 16.25 21 11c0-4.97-4.03-9-9-9zm0 17.88C10.14 18.09 5 13.86 5 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 2.86-5.14 7.09-7 8.88z" fill="#fff"/>
                 <circle cx="12" cy="11" r="3" fill="#6ec1f6"/>
               </svg>
-              370 Jay St, Brooklyn, NY, USA 11201
+              <span>370 Jay St, Brooklyn, NY, USA</span>
             </div>
             <div className="contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{marginRight: '6px', verticalAlign: 'middle'}}>
+              <svg
+                className="contact-row__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
                 <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.2 2.2z" fill="#fff"/>
               </svg>
-              +1-(201)-204-2218
+              <span>+1-(201)-204-2218</span>
             </div>
             <div className="contact-row">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style={{marginRight: '6px', verticalAlign: 'middle'}}>
+              <svg
+                className="contact-row__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
                 <path d="M4 4h16v16H4V4zm8 8l8-5.333V6l-8 5.333L4 6v.667L12 12z" fill="#fff"/>
               </svg>
-              <a href="mailto:remo.shen@nyu.edu" className="email-link">remo.shen@nyu.edu</a>
+              <a
+                href={"mailto:" + remoNyuEmail}
+                className="email-link"
+              >
+                {remoNyuEmail}
+              </a>
             </div>
+          </div>
+          <div className="home-location-map">
+            <iframe
+              title="370 Jay St, Brooklyn on OpenStreetMap"
+              className="home-location-map__embed"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-73.992%2C40.691%2C-73.981%2C40.695&layer=mapnik&marker=40.69323%2C-73.98657"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <a
+              className="home-location-map__osm"
+              href="https://www.openstreetmap.org/copyright"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              © OpenStreetMap
+            </a>
           </div>
         </div>
         <div className="homeContentRight">
           <div className="big-name-title">Yuancheng (Remo) Shen</div>
           <p>
-            Hello, I'm Remo. I'm currently a Ph.D. Candidate major in Computer Science at Tandon
-            School of Engineering, New York University. I'm working at the{" "}
+            Hello, I&apos;m Remo Shen, a Ph.D. Candidate in Computer Science at
+            NYU Tandon School of Engineering, working at the{" "}
             <a href="https://vida.engineering.nyu.edu/" target="_blank" rel="noreferrer">
               Visualization and Data Analytics Research Center (VIDA)
             </a>
-            , under the supervision of Prof. <space></space>
+            {" under the supervision of Prof. "}
             <a
               href="https://kruegert.github.io/"
               target="_blank"
@@ -104,16 +150,19 @@ export default function Home() {
             .
           </p>
           <p>
-            My research focuses on data visualization and visual analytics, with a particular emphasis on biomedical image analysis. Specifically, I hope to develop novel visual analytics techniques and interactive systems that facilitate the exploration, interpretation, and quantitative analysis of complex biomedical images and high-dimensional imaging datasets. 
-            My work aims to empower researchers and clinicians to gain deeper insights into biomedical phenomena through advanced tools.
+            My research focuses on data visualization and visual analytics,
+            with an emphasis on biomedical image analysis and high-dimensional
+            imaging data. I am developing interactive visual analytics systems that
+            help researchers explore, interpret, and analyze complex biomedical
+            datasets.
           </p>
           <p>
-            I received my master's degree at Shandong University where I worked
-            at the{" "}
+            Previously, I received my M.S. from Shandong University, where I
+            worked at the{" "}
             <a href="https://ideas-lab.net/" target="_blank" rel="noreferrer">
               IDEAS Lab
-            </a>
-            , advised by Prof.<space></space>
+            </a>{" "}
+            with Prof.{" "}
             <a
               href="http://www.yunhaiwang.net/"
               target="_blank"
@@ -121,9 +170,8 @@ export default function Home() {
             >
               Yunhai Wang
             </a>
-            . During my master's studies, I focused on the design and implementation of chart animation grammars and related interactive visual analytics systems.
-            My work aimed to enhance users' ability to explore and interpret data by designing expressive and intuitive animations for visual representations.
-
+            , focusing on chart animation grammars and interactive
+            visualization systems.
           </p>
         </div>
       </div>

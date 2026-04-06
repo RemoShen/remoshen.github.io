@@ -35,12 +35,12 @@ header {
 }
 .menu li a {
   text-decoration: none;
-  color: #fff;
+  color: #d1d5db;
   padding: 8px 12px;
   border-radius: 8px;
   font-size: 1.08rem;
-  font-weight: 700;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-weight: 600;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
   transition: color 0.2s, background 0.2s;
 }
 .menu li a:hover {
@@ -52,7 +52,7 @@ header {
   transition: all 200ms linear;
 }
 .title {
-  font-family: 'Montserrat', 'Arial Black', Arial, sans-serif;
+  font-family: 'Source Sans 3', -apple-system, sans-serif;
   font-size: 1.5rem;
   color: #fff;
   font-weight: 900;
@@ -74,7 +74,7 @@ header {
   font-weight: 400;
   letter-spacing: 1px;
   color: #fff;
-  font-family: 'Satisfy', cursive, 'Montserrat', 'Arial', sans-serif;
+  font-family: 'Satisfy', cursive, 'Source Sans 3', Georgia, serif;
 }
 @media (max-width: 700px) {
   .menuContainer {

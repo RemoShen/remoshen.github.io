@@ -14,19 +14,19 @@ footer {
 }
 .footer-content {
   text-align: center;
-  color: #fff;
+  color: #6b7280;
   width: 100%;
-  font-size: 1.08rem;
-  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
 }
 .footer-content span {
   margin: 0 10px;
 }
 .footer-content a {
   text-decoration: none;
-  color: #6ec1f6;
+  color: #5b9cc9;
   transition: color 0.2s;
 }
 .footer-content a:hover {
-  color: #fff;
+  color: #6ec1f6;
 }
