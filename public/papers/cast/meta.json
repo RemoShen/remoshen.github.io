@@ -1,0 +1,15 @@
+{
+  "order": 20,
+  "title": "Authoring Data-Driven Chart Animations through Direct Manipulation",
+  "authors": [
+    "Yuancheng Shen",
+    "Yunhai Wang",
+    "Yue Zhao",
+    "Tong Ge",
+    "Haoyan Shi",
+    "Bongshin Lee"
+  ],
+  "venue": "IEEE Transactions on Visualization and Computer Graphics 2024",
+  "link": "/papers/cast/CAST.pdf",
+  "teaser": "teaser.png"
+}

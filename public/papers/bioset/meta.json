@@ -1,0 +1,18 @@
+{
+  "order": 10,
+  "title": "BioSET - Biomarker-based Spatial co-Expression analysis in Tumor environments",
+  "authors": [
+    "Chahat Kalsi",
+    "Yuancheng Shen",
+    "Sophia Gaupp",
+    "Luca Reichmann",
+    "Meri Rogava",
+    "Michael Krone",
+    "Saeed Boorboor",
+    "Robert Krueger"
+  ],
+  "venue": "Bio+MedVis Challenge @ IEEE VIS 2025 (Award of Excellence)",
+  "link": "http://biovis.net/2025/data/BioMedVisChallenge2025submissions/9592/final.pdf",
+  "teaser": "teaser.png",
+  "year": 2025
+}

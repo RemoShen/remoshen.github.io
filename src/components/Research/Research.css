@@ -39,6 +39,18 @@
   text-decoration: underline;
 }
 
+.research-loading,
+.research-load-error {
+  margin: 0 0 1rem;
+  padding: 0 10%;
+  text-align: left;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.research-load-error {
+  color: #f87171;
+}
+
 @media screen and (min-height: 800px) {
   .researchContent {
     max-height: 550px;

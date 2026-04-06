@@ -44,6 +44,6 @@
     margin-top: 10px;
   }
 .highlight-author {
-  color: #079bbc; /* 你喜欢的蓝色，也可以换成别的色号 */
+  color: #079bbc; /* accent blue; swap for another hex if you prefer */
   font-weight: bold;
 }
