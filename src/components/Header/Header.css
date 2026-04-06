@@ -14,14 +14,24 @@ header {
   justify-content: center;
 }
 .menuContainer {
-  display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 2vw, 2.5rem);
+  box-sizing: border-box;
+}
+
+/* 与研究页 .researchContent 同宽居中，左右与正文列对齐 */
+.menuInner {
+  width: 100%;
+  max-width: 68rem;
+  margin: 0 auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 2vw;
+  gap: 1rem;
 }
+
 .menu {
   list-style: none;
   display: flex;
@@ -69,7 +79,8 @@ header {
   align-items: center;
 }
 .name h1{
-  padding: 0 20px;
+  padding: 0;
+  margin: 0;
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -78,7 +89,7 @@ header {
 }
 @media (max-width: 700px) {
   .menuContainer {
-    padding: 0 8px;
+    padding: 0 clamp(1rem, 2vw, 2.5rem);
   }
   .menu {
     gap: 16px;
@@ -88,6 +99,6 @@ header {
   }
   .name h1 {
     font-size: 1rem;
-    padding: 0 8px;
+    padding: 0;
   }
 }

@@ -29,7 +29,7 @@
 
 .homeHeader {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 3.5rem 0 1.5rem 0;
   display: flex;
@@ -51,7 +51,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1600px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;

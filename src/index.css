@@ -1,3 +1,16 @@
+html {
+  /* 预留滚动条占位，避免长页与 fixed header 错位（轨道隐藏时仍尽量稳定布局） */
+  scrollbar-gutter: stable;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
 body {
   margin: 0;
   padding: 0;

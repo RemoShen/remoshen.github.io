@@ -1,49 +1,125 @@
 .project-item {
-    display: flex;
-    width: 85%;
-    margin: 5px 0% 15px 7%;
-    align-items: center;
-    border: 0.5px solid #ccc;
-    padding: 0 10px;
-    cursor: pointer;
-    transition: all 0.25s;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.75rem 6.25rem 0.75rem 1.35rem;
+  gap: 1rem;
+  min-height: unset;
+  box-sizing: border-box;
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 14px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.proImg {
+  flex-shrink: 0;
+  width: 190px;
+  height: 114px;
+  margin: 0;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #1f1f1f;
+}
+
+.proInfo {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 52rem;
+  text-align: left;
+  margin: 0;
+}
+
+.proCategory {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.proTitle {
+  font-weight: 700;
+  margin-top: 0.25rem;
+  font-size: clamp(0.875rem, 1.5vw, 1.05rem);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #f9fafb;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.proTitle::-webkit-scrollbar {
+  display: none;
+}
+
+.proAuthor {
+  font-size: 0.9rem;
+  margin-top: 0.38rem;
+  line-height: 1.4;
+  color: #e5e7eb;
+}
+
+.proConf {
+  margin-top: 0.38rem;
+  font-style: italic;
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.proLinks {
+  margin-top: 0.38rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.65rem;
+}
+
+.proLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.proPDF {
+  margin-top: 6px;
+}
+
+@media (min-width: 701px) and (max-width: 960px) {
+  .project-item {
+    padding-right: 5rem;
+    gap: 0.9rem;
   }
-  .project-item:hover {
-    transform: scale(1.01);
-    transition: all 0.25s;
-  }
+
   .proImg {
-    height: 120px;
-    width: 200px;
-    margin-right: 5%;
-    margin-left: 1%;
-    background-size: cover;
-    background-position: center;
+    width: 168px;
+    height: 101px;
   }
-  .proInfo {
-    text-align: left;
-    margin-left: 10px;
+}
+
+@media (max-width: 700px) {
+  .project-item {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: unset;
+    padding: 0.75rem 2.75rem 0.75rem 1.15rem;
   }
-  .proCategory {
-    font-size: 14px;
+
+  .proImg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-height: 180px;
   }
+
   .proTitle {
-    font-weight: bold;
-    margin-top: 5px;
-    letter-spacing: 0.5px;
+    white-space: normal;
+    overflow-x: visible;
   }
-  .proAuthor {
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  .proConf {
-    margin-top: 5px;
-    font-style: italic;
-  }
-  .proPDF {
-    margin-top: 10px;
-  }
-.highlight-author {
-  color: #079bbc; /* accent blue; swap for another hex if you prefer */
-  font-weight: bold;
 }

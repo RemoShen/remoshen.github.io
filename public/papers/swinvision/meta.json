@@ -1,5 +1,4 @@
 {
-  "order": 30,
   "title": "Swinvision: Detecting Small Objects in Low-Light Environments",
   "authors": [
     "Tao Dai",
@@ -8,6 +7,6 @@
     "Shang Gao"
   ],
   "venue": "IEEE Access 2025",
-  "link": "https://ieeexplore.ieee.org/document/10910170",
+  "paper": "https://ieeexplore.ieee.org/document/10910170",
   "teaser": "teaser.png"
 }

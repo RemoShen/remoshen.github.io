@@ -1,47 +1,122 @@
 .publication-item {
   display: flex;
-  width: 85%;
-  margin: 5px 0% 15px 7%;
-  align-items: center;
-  border: 0.5px solid #ccc;
-  padding: 0 10px;
-  cursor: pointer;
-  transition: all 0.1s;
-  will-change: transform;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.75rem 6.25rem 0.75rem 1.35rem;
+  gap: 1rem;
+  min-height: unset;
+  box-sizing: border-box;
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 14px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
 }
-/* .publication-item:hover {
-  transform: scale(1.01);
-  transition: all 0.1s;
-} */
+
 .pubImg {
-  height: 120px;
-  width: 200px;
-  margin-right: 5%;
-  margin-left: 1%;
+  flex-shrink: 0;
+  width: 190px;
+  height: 114px;
+  margin: 0;
+  border-radius: 10px;
   background-size: cover;
   background-position: center;
+  border: 1px solid #1f1f1f;
 }
+
 .pubInfo {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 52rem;
   text-align: left;
-  margin-left: 10px;
+  margin: 0;
 }
-.pubCategory {
-  font-size: 14px;
-}
+
 .pubTitle {
-  font-weight: bold;
-  margin-top: 5px;
-  max-width: 600px;
-  letter-spacing: 0.5px;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: clamp(0.875rem, 1.5vw, 1.05rem);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #f9fafb;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
+.pubTitle::-webkit-scrollbar {
+  display: none;
+}
+
 .pubAuthor {
-  font-size: 14px;
-  margin-top: 5px;
+  font-size: 0.9rem;
+  margin-top: 0.38rem;
+  line-height: 1.4;
+  color: #e5e7eb;
 }
+
 .pubConf {
-  margin-top: 5px;
+  margin-top: 0.38rem;
+  font-style: italic;
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+.pubConf__award {
+  font-weight: 700;
   font-style: italic;
 }
+
+.pubLinks {
+  margin-top: 0.38rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.65rem;
+}
+
+.pubLink {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
 .pubPDF {
-  margin-top: 10px;
+  margin-top: 6px;
+}
+
+@media (min-width: 701px) and (max-width: 960px) {
+  .publication-item {
+    padding-right: 5rem;
+    gap: 0.9rem;
+  }
+
+  .pubImg {
+    width: 168px;
+    height: 101px;
+  }
+}
+
+@media (max-width: 700px) {
+  .publication-item {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: unset;
+    padding: 0.75rem 2.75rem 0.75rem 1.15rem;
+  }
+
+  .pubImg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-height: 180px;
+  }
+
+  .pubTitle {
+    white-space: normal;
+    overflow-x: visible;
+  }
 }

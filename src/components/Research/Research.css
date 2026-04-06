@@ -1,48 +1,42 @@
 .researchContainer {
-  width: 85%;
+  width: 100%;
+  max-width: 1600px;
   margin: 0 auto;
+  margin-top: 70px;
+  padding: 1.5rem clamp(1rem, 2vw, 2.5rem) 3.5rem;
+  box-sizing: border-box;
   color: #fff;
   background: #000;
-}
-.researchHeader {
-  margin: 0 10%;
-  padding: 10px;
   text-align: left;
-  color: #fff;
 }
+
 .researchContent {
   width: 100%;
-  margin: 60px 0px auto auto;
+  max-width: 68rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  /* max-height: 400px; */
-  overflow-y: auto;
-  color: #fff;
-  will-change: transform;
-}
-.researchContainer h1 {
-  margin: 0;
-  font-family: 'Source Sans 3', -apple-system, sans-serif;
+  gap: 0.5rem;
   color: #fff;
 }
-.leftSperator {
-  display: none;
-}
-.researchContent a {
+
+.researchContent a:not(.publication-item):not(.project-item) {
   color: #6ec1f6;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
-.researchContent a:hover {
+
+.researchContent a:not(.publication-item):not(.project-item):hover {
   color: #fff;
   text-decoration: underline;
 }
 
 .research-loading,
-.research-load-error {
+.research-load-error,
+.research-empty {
   margin: 0 0 1rem;
-  padding: 0 10%;
+  padding: 0;
   text-align: left;
   font-family: 'Source Sans 3', -apple-system, sans-serif;
 }
@@ -51,33 +45,12 @@
   color: #f87171;
 }
 
-@media screen and (min-height: 800px) {
-  .researchContent {
-    max-height: 550px;
-  }
+.research-empty {
+  color: #9ca3af;
+  font-size: 0.95rem;
 }
-@media screen and (max-height: 700px) {
-  .researchContent {
-    max-height: 400px;
-  }
-}
-@media screen and (max-height: 600px) {
-  .researchContent {
-    max-height: 300px;
-  }
-}
-@media screen and (max-height: 500px) {
-  .researchContent {
-    max-height: 200px;
-  }
-}
-@media screen and (max-height: 400px) {
-  .researchContent {
-    max-height: 100px;
-  }
-}
-@media screen and (max-height: 300px) {
-  .researchContent {
-    display: none;
-  }
+
+.researchContent .highlight-author {
+  color: #6ec1f6;
+  font-weight: 700;
 }

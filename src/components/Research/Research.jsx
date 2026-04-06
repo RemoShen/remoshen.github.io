@@ -32,10 +32,6 @@ export default function Research() {
 
   return (
     <div className="researchContainer">
-      <div className="researchHeader">
-        <h1>Publications & Projects</h1>
-        <div className="leftSperator"></div>
-      </div>
       <div className="researchContent">
         {loadError && (
           <p className="research-load-error" role="alert">
@@ -45,8 +41,14 @@ export default function Research() {
         {loading && !loadError && (
           <p className="research-loading">Loading…</p>
         )}
+        {!loading &&
+          !loadError &&
+          publications.length === 0 &&
+          projects.length === 0 && (
+            <p className="research-empty">No publications or projects to show yet.</p>
+          )}
         {publications.map((paper, index) => (
-          <Publication key={paper.title + index} info={paper} />
+          <Publication key={paper.slug ?? paper.title + index} info={paper} />
         ))}
         {projects.map((project, index) => (
           <Project key={"project" + index} info={project} />
