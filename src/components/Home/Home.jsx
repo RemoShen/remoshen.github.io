@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import photo from "./photo.JPG";
+import ResearchWordCloud from "./ResearchWordCloud";
 
 const remoNyuEmail = "remo.shen@nyu.edu";
 
@@ -173,6 +174,12 @@ export default function Home() {
             , focusing on chart animation grammars and interactive
             visualization systems.
           </p>
+          <section
+            className="home-research-cloud-section"
+            aria-label="Research themes word cloud"
+          >
+            <ResearchWordCloud />
+          </section>
         </div>
       </div>
     </div>

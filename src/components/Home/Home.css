@@ -138,6 +138,45 @@
   margin-bottom: 1.1rem;
 }
 
+.homeContentRight p:last-of-type {
+  margin-bottom: 1.1rem;
+}
+
+.home-research-cloud-section {
+  margin-top: 0.35rem;
+  text-align: left;
+  text-align-last: auto;
+  max-width: 100%;
+}
+
+.home-research-cloud {
+  width: 100%;
+  min-height: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.home-research-cloud__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.home-research-cloud__word {
+  fill: rgba(240, 240, 240, 0.72);
+  font-weight: 600;
+  font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+}
+
+.home-research-cloud__word--accent {
+  fill: #6ec1f6;
+  font-weight: 700;
+}
+
 .homeContentRight a {
   color: #6ec1f6;
   font-weight: 700;
