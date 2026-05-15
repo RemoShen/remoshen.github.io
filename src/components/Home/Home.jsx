@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import photo from "./photo.JPG";
+import photo from "./photo.png";
 import ResearchWordCloud from "./ResearchWordCloud";
 
 const remoNyuEmail = "remo.shen@nyu.edu";
