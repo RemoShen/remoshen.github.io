@@ -9,6 +9,10 @@
       "title": "BioSET: Interactive Visual Analysis of Biomarker Co-localization in Large Multi-Volume Tissue Data"
     },
     {
+      "slug": "paintcopilot",
+      "title": "PaintCopilot: Modeling Painting as Autonomous Artistic Continuation"
+    },
+    {
       "slug": "cast",
       "title": "Authoring Data-Driven Chart Animations through Direct Manipulation"
     },
