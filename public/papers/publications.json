@@ -5,12 +5,12 @@
       "title": "CellGalaxy: Multiscale Exploration of Biomedical Image Embeddings"
     },
     {
-      "slug": "bioset",
-      "title": "BioSET: Interactive Visual Analysis of Biomarker Co-localization in Large Multi-Volume Tissue Data"
+      "slug": "paintcopilot_chi",
+      "title": "PaintCopilot: Modeling Painting as Autonomous Artistic Continuation"
     },
     {
-      "slug": "paintcopilot",
-      "title": "PaintCopilot: Modeling Painting as Autonomous Artistic Continuation"
+      "slug": "bioset",
+      "title": "BioSET: Interactive Visual Analysis of Biomarker Co-localization in Large Multi-Volume Tissue Data"
     },
     {
       "slug": "cast",
@@ -19,6 +19,10 @@
     {
       "slug": "swinvision",
       "title": "Swinvision: Detecting Small Objects in Low-Light Environments"
+    },
+    {
+      "slug": "paintcopilot_nips",
+      "title": "PaintCopilot: Modeling Painting as Autonomous Artistic Continuation"
     },
     {
       "slug": "bioset_challenge",
