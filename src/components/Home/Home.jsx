@@ -151,11 +151,7 @@ export default function Home() {
             .
           </p>
           <p>
-            My research focuses on data visualization and visual analytics,
-            with an emphasis on biomedical image analysis and high-dimensional
-            imaging data. I am developing interactive visual analytics systems that
-            help researchers explore, interpret, and analyze complex biomedical
-            datasets.
+          My research focuses on data visualization and visual analytics, particularly at the intersection of large language models and complex data analysis. I investigate how visualization and LLMs can support the exploration and interpretation of high-dimensional data, with applications in biomedical imaging and beyond. I am also interested in human–AI collaboration for creative and analytical tasks.
           </p>
           <p>
             Previously, I received my M.S. from Shandong University, where I
