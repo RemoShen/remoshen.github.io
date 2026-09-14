@@ -1,0 +1,12 @@
+{
+  "talks": [
+    {
+      "id": "cast-vis-2025",
+      "title": "Authoring Data-Driven Chart Animations through Direct Manipulation",
+      "event": "IEEE VIS 2025",
+      "location": "Vienna, Austria",
+      "date": "2025-11",
+      "type": "Conference Talk"
+    }
+  ]
+}

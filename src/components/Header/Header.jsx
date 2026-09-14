@@ -28,10 +28,10 @@ export default function Header() {
             </li>
             <li>
               <NavLink
-                to="/about"
+                to="/talks"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
-                ABOUT ME
+                TALKS
               </NavLink>
             </li>
           </ul>
