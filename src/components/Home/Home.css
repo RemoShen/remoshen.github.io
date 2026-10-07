@@ -2,7 +2,7 @@
 .homeContainer {
   box-sizing: border-box;
   position: relative;
-  margin-top: 70px;
+  margin-top: var(--site-header-height);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,7 +295,7 @@
 @media (max-width: 900px) {
   .homeContainer {
     align-items: center;
-    margin-top: 70px;
+    margin-top: var(--site-header-height);
     padding: 1.25rem 0 4.5rem 0;
   }
   .homeHeader {

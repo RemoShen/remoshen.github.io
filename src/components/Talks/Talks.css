@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: var(--site-header-height);
   padding: 2rem clamp(1rem, 2vw, 2.5rem) 4rem;
   box-sizing: border-box;
   color: #c8c8c8;
@@ -41,7 +41,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1.85rem;
+  gap: 1.65rem;
 }
 
 .talk-item {
@@ -49,28 +49,42 @@
   padding: 0;
 }
 
-.talk-item__venue,
-.talk-item__talk {
+.talk-item__date,
+.talk-item__body {
   margin: 0;
   font-family: "Source Sans 3", -apple-system, sans-serif;
   line-height: 1.55;
-  color: #c8c8c8;
 }
 
-.talk-item__venue {
-  font-size: 1.2rem;
+.talk-item__date {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.talk-item__body {
+  margin-top: 0.15rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #d1d5db;
+}
+
+.talk-item__inline-link {
+  color: #6ec1f6;
+  text-decoration: none;
+}
+
+.talk-item__inline-link:hover {
+  text-decoration: underline;
+}
+
+.talk-item__strong {
   font-weight: 700;
   color: #e8e8e8;
 }
 
-.talk-item__talk {
-  margin-top: 0.2rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
 .talk-item__links {
-  margin: 0.2rem 0 0;
+  margin: 0.35rem 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem 0.65rem;

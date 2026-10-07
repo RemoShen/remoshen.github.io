@@ -23,7 +23,7 @@ export default function Header() {
                 to="/research"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
-                RESEARCH
+                PUBLICATION
               </NavLink>
             </li>
             <li>
@@ -31,7 +31,7 @@ export default function Header() {
                 to="/talks"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
-                TALKS
+                EVENTS / NEWS
               </NavLink>
             </li>
           </ul>
