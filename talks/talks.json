@@ -1,12 +1,30 @@
 {
   "talks": [
+
+    {
+      "id": "essb-2026-poster",
+      "date": "2026-09-30",
+      "body": "I presented a poster at the European Society for Spatial Biology (ESSB), 2026 for [Human-in-the-loop Characterization of Tissue Microenvironments: From Intensity Averaging to Representation Learning](/posters/CellGalaxy_Poster.pdf) in Sitges, Spain."
+    },
+    {
+      "id": "essb-2026-best-poster",
+      "date": "2026-09-30",
+      "body": "Our team received the **Best Poster Award** at the European Society for Spatial Biology (ESSB), 2026 for [Scalable 3D Visualization and Spatial Exploration of Multiplexed Cancer Tissue Images for the Web](/posters/BioSET_Poster.pdf) (I contributed as a collaborator) in Sitges, Spain."
+    },
+    {
+      "id": "paintcopilot-neurips-creative-ai-2026",
+      "date": "2026-09-22",
+      "body": "Our paper [PaintCopilot: Modeling Painting as Autonomous Artistic Continuation](https://openreview.net/forum?id=UHbGK6aRSk) was **accepted** to the **NeurIPS Creative AI Track 2026**."
+    },
     {
       "id": "cast-vis-2025",
-      "title": "Authoring Data-Driven Chart Animations through Direct Manipulation",
-      "event": "IEEE VIS 2025",
-      "location": "Vienna, Austria",
       "date": "2025-11",
-      "type": "Conference Talk"
+      "body": "I gave a full paper presentation on [Authoring Data-Driven Chart Animations through Direct Manipulation](https://ieeexplore.ieee.org/document/10742546) at IEEE VIS 2025 in Vienna, Austria."
+    },
+    {
+      "id": "cast-tvcg-2024-acceptance",
+      "date": "2024-10",
+      "body": "Our paper [Authoring Data-Driven Chart Animations through Direct Manipulation](https://canisstudio.github.io/CASTPlus/) was **accepted** as a regular paper in **IEEE Transactions on Visualization and Computer Graphics (TVCG)**."
     }
   ]
 }

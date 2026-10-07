@@ -19,5 +19,6 @@
   ],
   "venue": "IEEE Transactions on Visualization and Computer Graphics (TVCG) (Under Review)",
   "code": "https://github.com/RemoShen/CellGalaxy",
+  "poster": "./public/posters/CellGalaxy_poster.pdf",
   "teaser": "teaser.png"
 }
