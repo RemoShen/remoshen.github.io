@@ -4,17 +4,22 @@
     {
       "id": "essb-2026-poster",
       "date": "2026-09-30",
-      "body": "I presented a poster at the European Society for Spatial Biology (ESSB), 2026 for [Human-in-the-loop Characterization of Tissue Microenvironments: From Intensity Averaging to Representation Learning](/posters/CellGalaxy_Poster.pdf) in Sitges, Spain."
+      "body": "I presented a poster on [Human-in-the-loop Characterization of Tissue Microenvironments: From Intensity Averaging to Representation Learning](/posters/CellGalaxy_Poster.pdf) at the European Society for Spatial Biology (ESSB), 2026 in Sitges, Spain."
     },
     {
       "id": "essb-2026-best-poster",
       "date": "2026-09-30",
-      "body": "Our team received the **Best Poster Award** at the European Society for Spatial Biology (ESSB), 2026 for [Scalable 3D Visualization and Spatial Exploration of Multiplexed Cancer Tissue Images for the Web](/posters/BioSET_Poster.pdf) (I contributed as a collaborator) in Sitges, Spain."
+      "body": "Our team received the **Best Poster Award** for [Scalable 3D Visualization and Spatial Exploration of Multiplexed Cancer Tissue Images for the Web](/posters/BioSET_Poster.pdf) (I contributed as a collaborator) at the European Society for Spatial Biology (ESSB), 2026 in Sitges, Spain."
     },
     {
       "id": "paintcopilot-neurips-creative-ai-2026",
       "date": "2026-09-22",
       "body": "Our paper [PaintCopilot: Modeling Painting as Autonomous Artistic Continuation](https://openreview.net/forum?id=UHbGK6aRSk) was **accepted** to the **NeurIPS Creative AI Track 2026**."
+    },
+    {
+      "id": "bioset-biomedvis-challenge-vis-2025",
+      "date": "2025-11",
+      "body": "Our team received the **Award of Excellence** at the **Bio+MedVis Challenge @ IEEE VIS 2025** for [BioSET - Biomarker-based Spatial co-Expression analysis in Tumor environments](http://biovis.net/2025/data/BioMedVisChallenge2025submissions/9592/final.pdf) at IEEE VIS 2025 in Vienna, Austria."
     },
     {
       "id": "cast-vis-2025",
